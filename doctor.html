@@ -49,7 +49,14 @@
       <h3 class="heading">Our Specialist Doctors</h3>
       <p class="sub-heading">Find the best doctors which suited for your problems.</p>
     </div>
-    <div class="categories">
+    
+    <div class="categories" id="search-container">
+      <label for="ambulance" class="sub-heading"><b>Search Doctors</b></label>
+
+      <input type="search" name="" id="search-input" onkeyup="searchDoctor()" placeholder="Search with disease keywords" 
+        class="sub-heading len" />
+    </div>
+    <!-- <div class="categories">
       <button id="disease">
         Asthma
       </button>
@@ -59,7 +66,667 @@
       <button id="disease">
         Tuberculosis
       </button>
+      <button id="disease">
+        Asthma
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Tuberculosis
+      </button><button id="disease">
+        Asthma
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Tuberculosis
+      </button>
+    </div> -->
+  <div class="doctor-cards">
+    <div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">All Disease Specialist</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
     </div>
+    <div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">All Disease Specialist</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
+    </div><div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">Neurologist</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
+    </div><div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">All Disease Specialist</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
+    </div>
+    <div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">Gastroenterology</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
+    </div>
+    <div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">All Disease Specialist</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
+    </div><div class="cards" id="card">
+      <div class="appointment-content">
+        <div class="appoint-details doc-space">
+          <div class="image">
+            <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+              style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+          </div>
+          <div class="details">
+            <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+            <span class="sub-heading">Neurologist</span><br>
+            <span class="sub-heading">New Baneshwor Kathmandu</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="rating">
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+        <span> <i class="fa-sharp fa fa-star"></i></span>
+      </div>
+      <div class="exp">
+        <p class="sub-heading"> 2+ years of exp</p>
+      </div>
+      <div class="categories" id="doc-categories">
+        <button id="disease">
+          Conjunctivitis
+        </button>
+        <button id="disease">
+          Hypertension
+        </button>
+        <button id="disease">
+          Cataract
+        </button>
+        <!-- <button id="disease">
+          5+
+        </button> -->
+      </div>
+      
+      <div class="doc-details spacing">
+        <span class="sub-heading"><b>Rs.1500</b></span>
+        <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+      </div>
+
+   
+    
+  </div>
+  <div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">All Disease Specialist</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+  </div>
+  <div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">All Disease Specialist</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+  </div><div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">Neurologist</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+  </div><div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">All Disease Specialist</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+  </div>
+  <div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">Gastroenterology</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+  </div>
+  <div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">All Disease Specialist</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+  </div><div class="cards" id="card">
+    <div class="appointment-content">
+      <div class="appoint-details doc-space">
+        <div class="image">
+          <img src="./images/shraddha.jpg" alt="" width="45px" height="45px"
+            style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+        </div>
+        <div class="details">
+          <span class="appoint-name">Prof. Dr. Shisir Pradhan</span><br>
+          <span class="sub-heading">Neurologist</span><br>
+          <span class="sub-heading">New Baneshwor Kathmandu</span>
+        </div>
+      </div>
+     
+    </div>
+    <div class="rating">
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+      <span> <i class="fa-sharp fa fa-star"></i></span>
+    </div>
+    <div class="exp">
+      <p class="sub-heading"> 2+ years of exp</p>
+    </div>
+    <div class="categories" id="doc-categories">
+      <button id="disease">
+        Conjunctivitis
+      </button>
+      <button id="disease">
+        Hypertension
+      </button>
+      <button id="disease">
+        Cataract
+      </button>
+      <!-- <button id="disease">
+        5+
+      </button> -->
+    </div>
+    
+    <div class="doc-details spacing">
+      <span class="sub-heading"><b>Rs.1500</b></span>
+      <button><a href="tel:9860112223" style="text-decoration: none; color: #fff;"><i class="fa fa-phone"></i> Get Appointment</a></button>
+
+    </div>
+
+ 
+  
+</div>
   
     
 
@@ -82,6 +749,18 @@
     crossorigin="anonymous"></script>
 
   <script src="index.js"></script>
+  <script>
+    // const searchDoctor = () => {
+    //   let filter = document.getElementById('search-input').value.toUpperCase();
+    //   let disease = document.getElementById('card');
+
+    //   let dis = disease.getElementById('doc-categories');
+
+      
+    // }
+  </script>
+  
+  
 </body>
 
 

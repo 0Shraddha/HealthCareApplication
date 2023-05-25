@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="index.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  .display_row{
-    display: none;
-  }
-</style>
+  <style>
+    .display_row {
+      display: none;
+    }
+  </style>
 
   <title>Blood Details</title>
 </head>
@@ -39,7 +39,8 @@
           <a href="./blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
               class="nav_name">Blogs</span> </a>
         </div>
-      </div> <a href="./front.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Logout</span>
+      </div> <a href="./front.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+          class="nav_name">Logout</span>
       </a>
     </nav>
   </div>
@@ -51,112 +52,143 @@
   </div>
   <section class="main lmargin">
     <div class="opening">
-        <h3 class="heading">Blood Details</h3>
-        <p class="sub-heading">Check the bloods which are available on our website application.</p>
-      </div>
-      <div class="categories">
-        <button id="all" class="blood-btn" id>All</button>
-        <button id="a1" class="blood-btn">A+</button>
-        <button id="a2" class="blood-btn">A-</button>
-        <button id="b1" class="blood-btn">B+</button>
-        <button id="b2" class="blood-btn">B-</button>
-        <button id="ab1" class="blood-btn">AB+</button>
-        <button id="ab2" class="blood-btn">AB-</button>
-        <button id="o1" class="blood-btn">O+</button>
-        <button id="o2" class="blood-btn">O-</button>
-      </div>
+      <h3 class="heading">Blood Details</h3>
+      <p class="sub-heading">Check the bloods which are available on our website application.</p>
+    </div>
+    <div class="categories" id="search-container">
+      <label for="blood" class="sub-heading"><b>Search Blood Type</b></label>
+      <input type="search" name="" id="search-input" onkeyup="searchAmbulance()" placeholder="Enter the blood group"
+        class="sub-heading" />
+    </div>
+    <!-- <br> -->
+    <!-- <div class="categories">
+        <span id="all" class="blood-filter" id>All</span>
+        <span id="a1" class="blood-filter">A+</span>
+        <span id="a2" class="blood-filter">A-</span>
+        <span id="b1" class="blood-filter">B+</span>
+        <span id="b2" class="blood-filter">B-</span>
+        <span id="ab1" class="blood-filter">AB+</span>
+        <span id="ab2" class="blood-filter">AB-</span>
+        <span id="o1" class="blood-filter">O+</span>
+        <span id="o2" class="blood-filter">O-</button>
+      </div> -->
     <table class="table table-striped" id="myTable">
-        <thead>
-          <tr>
-            <th scope="col">S.NO</th>
-            <th scope="col">Hospital Name</th>
-            <th scope="col">Contact No.</th>
-            <th scope="col">Blood Group</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td class="sub-heading">Kathmandu Medical College</td>
-            <td class="sub-heading">+977-1-4469064 / 4476152</td>
-            <td class="sub-heading">A+,  A-, O+, O-, B+, B-,  AB+AB-</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td class="sub-heading">Venus Hospital</td>
-            <td class="sub-heading">01 – 4475120/ 4490255</td>
-            <td class="sub-heading">A+,  A-, B+, B-</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td class="sub-heading">Nobel Hospital</td>
-            <td class="sub-heading">01 4110842, 4110893</td>
-            <td class="sub-heading">A+,  A-, O+</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-            <td class="sub-heading">977-(0)1-4470588</td>
-            <td class="sub-heading">AB+</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td class="sub-heading">Medicare National Hospital & Research Center</td>
-            <td class="sub-heading">977-1-4467067</td>
-            <td class="sub-heading">AB+,  AB-</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td class="sub-heading">Nobel Hospital</td>
-            <td class="sub-heading">01 4110842, 4110893</td>
-            <td class="sub-heading">A+,  A-, O+</td>
-          </tr>
-          <tr>
-            <th scope="row">7</th>
-            <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-            <td class="sub-heading">977-(0)1-4470588</td>
-            <td class="sub-heading">AB+</td>
-          </tr>
-          <tr>
-            <th scope="row">8</th>
-            <td class="sub-heading">Medicare National Hospital & Research Center</td>
-            <td class="sub-heading">977-1-4467067</td>
-            <td class="sub-heading">AB+,  AB-</td>
-          </tr>
-          <tr>
-            <th scope="row">9</th>
-            <td class="sub-heading">Nobel Hospital</td>
-            <td class="sub-heading">01 4110842, 4110893</td>
-            <td class="sub-heading">A+,  A-, O+</td>
-          </tr>
-          <tr>
-            <th scope="row">10</th>
-            <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-            <td class="sub-heading">977-(0)1-4470588</td>
-            <td class="sub-heading">AB+</td>
-          </tr>
-          <tr>
-            <th scope="row">11</th>
-            <td class="sub-heading">Medicare National Hospital & Research Center</td>
-            <td class="sub-heading">977-1-4467067</td>
-            <td class="sub-heading">AB+,  AB-</td>
-          </tr>
-          <tr>
-            <th scope="row">12</th>
-            <td class="sub-heading">Nobel Hospital</td>
-            <td class="sub-heading">01 4110842, 4110893</td>
-            <td class="sub-heading">A+,  A-, O+</td>
-          </tr>
-          <tr>
-            <th scope="row">13</th>
-            <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-            <td class="sub-heading">977-(0)1-4470588</td>
-            <td class="sub-heading">AB+</td>
-          </tr>
-    
-        </tbody>
-      </table>
-</section>
+      <thead>
+        <tr>
+          <th scope="col">S.NO</th>
+          <th scope="col">Hospital Name</th>
+          <th scope="col">Contact No.</th>
+          <th scope="col">Blood Group</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td class="sub-heading">Kathmandu Medical College</td>
+          <td class="sub-heading"><a href="tel:+977-1-4469064"
+              style="text-decoration: none; color: #000;">+977-1-4469064 / 4476152</a></td>
+          <td class="sub-heading">A+, A-, O+, O-, B+, B-, AB+AB-</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="sub-heading">Venus Hospital</td>
+          <td class="sub-heading"><a href="tel:+977-1-4469064"
+              style="text-decoration: none; color: #000;">+977-4476152</a></td>
+          <td class="sub-heading">A+, A-, B+, B-</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="sub-heading">Nobel Hospital</td>
+          <td class="sub-heading"><a href="tel:+977-1-4469064"
+              style="text-decoration: none; color: #000;">+977-1-4466152</a></td>
+
+          <td class="sub-heading">A+, A-, O+</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
+          <td class="sub-heading"><a href="tel:+977-1-4470588"
+              style="text-decoration: none; color: #000;">+977-1-76152</a></td>
+          <td class="sub-heading">AB+</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td class="sub-heading">Medicare National Hospital & Research Center</td>
+          <td class="sub-heading"><a href="tel:+977-1-4469064"
+              style="text-decoration: none; color: #000;">+977-1-446152</a></td>
+          <td class="sub-heading">AB+, AB-</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td class="sub-heading">Nobel Hospital</td>
+          <td class="sub-heading"><a href="tel:+977-1-4470588"
+              style="text-decoration: none; color: #000;">+977-1-4469064 / 4476152</a></td>
+
+          <td class="sub-heading">A+, A-, O+</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
+          <td class="sub-heading"><a href="tel:4470588" style="text-decoration: none; color: #000;">+977-1-4469064 /
+              4476152</a></td>
+
+          <td class="sub-heading">AB+</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td class="sub-heading">Medicare National Hospital & Research Center</td>
+          <td class="sub-heading"><a href="tel:+977-1-4470588"
+              style="text-decoration: none; color: #000;">+977-1-4476152</a></td>
+
+          <td class="sub-heading">AB+, AB-</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td class="sub-heading">Nobel Hospital</td>
+          <td class="sub-heading"><a href="tel:+977446688" style="text-decoration: none; color: #000;">+977-1-4469064
+              / 4476152</a></td>
+
+          <td class="sub-heading">A+, A-, O+</td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
+          <td class="sub-heading"><a href="tel:+977-1-4470588"
+              style="text-decoration: none; color: #000;">01-4476152</a></td>
+
+          <td class="sub-heading">AB+</td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td class="sub-heading">Medicare National Hospital & Research Center</td>
+          <td class="sub-heading"><a href="tel:+977-1-446688" style="text-decoration: none; color: #000;">+977-1-4469064
+              / 4476152</a></td>
+
+          <td class="sub-heading">AB+, AB-</td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td class="sub-heading">Nobel Hospital</td>
+          <td class="sub-heading"><a href="tel:01-4220896" style="text-decoration: none; color: #000;">+977-1-4469064 /
+              4476152</a></td>
+
+          <td class="sub-heading">A+, A-, O+</td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
+          <td class="sub-heading"><a href="tel:01-446688" style="text-decoration: none; color: #000;">+977-1-4469064
+              / 4476152</a></td>
+
+          <td class="sub-heading">AB+</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+
+  </section>
 
 
 
@@ -165,7 +197,7 @@
 
 
 
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -177,32 +209,36 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
   <script src="index.js">
 
-  
+
   </script>
 
-<script>
-  const searchBlood = () => {
-    let filter = document.getElementById('blood');
-    let myTable = document.getElementById('myTable');
+  <script>
+    const searchAmbulance = () => {
+      let filter = document.getElementById('search-input').value.toUpperCase();
+      let myTable = document.getElementById('myTable');
 
-    let tr = myTable.getElementsByTagName('tr');
+      let tr = myTable.getElementsByTagName('tr');
 
-    for (var i = 0; i < tr.length; i++) {
-      let td = tr[i].getElementsByTagName('td')[2];
-      if (td) {
-        let textValue = td.textContent || td.innerHTML;
-        if (textValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
+      for (var i = 0; i < tr.length; i++) {
+        let td = tr[i].getElementsByTagName('td')[2];
+        if (td) {
+          let textValue = td.textContent || td.innerHTML;
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
         }
       }
     }
-  }
-</script>
+
+
+
+
+  </script>
 
 </body>
 
