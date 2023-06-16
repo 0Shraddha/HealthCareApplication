@@ -26,17 +26,17 @@
     <nav class="nav">
       <div> <a href="#" class="nav_logo"><img src="./images/logowhite-01.png" alt=""></a>
         <div class="nav_list">
-          <a href="./index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
+          <a href="./admin-index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
               class="nav_name">Dashboard</span> </a>
-          <a href="./appointment.html" class="nav_link"> <img src="./images/Layer_1.png" alt="" width="15px"> <span
+          <a href="./listPatientsAppointment.html" class="nav_link"> <img src="./images/Layer_1.png" alt="" width="15px"> <span
               class="nav_name">Appointment</span> </a>
-          <a href="./doctor.html" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
+          <a href="#" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
               class="nav_name">Doctors</span> </a>
           <a href="#" class="nav_link active"> <img src="./images/Vector.png" alt="" width="10px"> <span
               class="nav_name">Blood</span> </a>
-          <a href="./ambulance.html" class="nav_link"> <img src="./images/Layer_1 (1).png" alt="" width="20px"> <span
+          <a href="./admin-ambulance.html" class="nav_link"> <img src="./images/Layer_1 (1).png" alt="" width="20px"> <span
               class="nav_name">Ambulance</span> </a>
-          <a href="./blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
+          <a href="./admin-blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
               class="nav_name">Blogs</span> </a>
         </div>
       </div> <a href="./website.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
@@ -79,6 +79,8 @@
           <th scope="col">Hospital Name</th>
           <th scope="col">Contact No.</th>
           <th scope="col">Blood Group</th>
+          <th scope="col">Action</th>
+
         </tr>
       </thead>
       <tbody>
@@ -88,6 +90,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
               style="text-decoration: none; color: #000;">+977-1-4469064 / 4476152</a></td>
           <td class="sub-heading">A+, A-, O+, O-, B+, B-, AB+AB-</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">2</th>
@@ -95,6 +101,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
               style="text-decoration: none; color: #000;">+977-4476152</a></td>
           <td class="sub-heading">A+, A-, B+, B-</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">3</th>
@@ -103,6 +113,10 @@
               style="text-decoration: none; color: #000;">+977-1-4466152</a></td>
 
           <td class="sub-heading">A+, A-, O+</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">4</th>
@@ -110,6 +124,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4470588"
               style="text-decoration: none; color: #000;">+977-1-76152</a></td>
           <td class="sub-heading">AB+</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">5</th>
@@ -117,6 +135,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
               style="text-decoration: none; color: #000;">+977-1-446152</a></td>
           <td class="sub-heading">AB+, AB-</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">6</th>
@@ -125,6 +147,10 @@
               style="text-decoration: none; color: #000;">+977-1-4469064 / 4476152</a></td>
 
           <td class="sub-heading">A+, A-, O+</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">7</th>
@@ -133,6 +159,10 @@
               4476152</a></td>
 
           <td class="sub-heading">AB+</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">8</th>
@@ -141,48 +171,11 @@
               style="text-decoration: none; color: #000;">+977-1-4476152</a></td>
 
           <td class="sub-heading">AB+, AB-</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
-        <tr>
-          <th scope="row">9</th>
-          <td class="sub-heading">Nobel Hospital</td>
-          <td class="sub-heading"><a href="tel:+977446688" style="text-decoration: none; color: #000;">+977-1-4469064
-              / 4476152</a></td>
-
-          <td class="sub-heading">A+, A-, O+</td>
-        </tr>
-        <tr>
-          <th scope="row">10</th>
-          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-          <td class="sub-heading"><a href="tel:+977-1-4470588"
-              style="text-decoration: none; color: #000;">01-4476152</a></td>
-
-          <td class="sub-heading">AB+</td>
-        </tr>
-        <tr>
-          <th scope="row">11</th>
-          <td class="sub-heading">Medicare National Hospital & Research Center</td>
-          <td class="sub-heading"><a href="tel:+977-1-446688" style="text-decoration: none; color: #000;">+977-1-4469064
-              / 4476152</a></td>
-
-          <td class="sub-heading">AB+, AB-</td>
-        </tr>
-        <tr>
-          <th scope="row">12</th>
-          <td class="sub-heading">Nobel Hospital</td>
-          <td class="sub-heading"><a href="tel:01-4220896" style="text-decoration: none; color: #000;">+977-1-4469064 /
-              4476152</a></td>
-
-          <td class="sub-heading">A+, A-, O+</td>
-        </tr>
-        <tr>
-          <th scope="row">13</th>
-          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-          <td class="sub-heading"><a href="tel:01-446688" style="text-decoration: none; color: #000;">+977-1-4469064
-              / 4476152</a></td>
-
-          <td class="sub-heading">AB+</td>
-        </tr>
-
       </tbody>
     </table>
 

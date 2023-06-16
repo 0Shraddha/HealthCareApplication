@@ -21,17 +21,17 @@
     <nav class="nav">
       <div> <a href="#" class="nav_logo"><img src="./images/logowhite-01.png" alt=""></a>
         <div class="nav_list">
-          <a href="./index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
+          <a href="./admin-index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
               class="nav_name">Dashboard</span> </a>
-          <a href="./appointment.html" class="nav_link"> <img src="./images/Layer_1.png" alt="" width="15px"> <span
+          <a href="./listPatientsAppointment.html" class="nav_link"> <img src="./images/Layer_1.png" alt="" width="15px"> <span
               class="nav_name">Appointment</span> </a>
-          <a href="./doctor.html" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
+          <a href="#" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
               class="nav_name">Doctors</span> </a>
-          <a href="./blood.html" class="nav_link"> <img src="./images/Vector.png" alt="" width="10px"> <span
+          <a href="./admin-blood.html" class="nav_link"> <img src="./images/Vector.png" alt="" width="10px"> <span
               class="nav_name">Blood</span> </a>
           <a href="#" class="nav_link active"> <img src="./images/Layer_1 (1).png" alt="" width="20px"> <span
               class="nav_name">Ambulance</span> </a>
-          <a href="./blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
+          <a href="./admin-blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
               class="nav_name">Blogs</span> </a>
         </div>
       </div> <a href="./website.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
@@ -63,6 +63,8 @@
           <th scope="col">Hospital Name</th>
           <th scope="col">Contact No.</th>
           <th scope="col">Location</th>
+          <th scope="col">Action</th>
+
         </tr>
       </thead>
       <tbody>
@@ -72,6 +74,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">+977-4476152</a></td>
           <td class="sub-heading">Baburam Acharya Road, Kathmandu 44600</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">2</th>
@@ -79,6 +85,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">01 – 4475120/ 4490255</a></td>
           <td class="sub-heading">Lagankhel, Lalitpur</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">3</th>
@@ -86,6 +96,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">01 4110842, 4110893</a></td>
           <td class="sub-heading">Jana Path, Godawari 44700</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">4</th>
@@ -93,6 +107,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">977-(0)1-4470588</a></td>
           <td class="sub-heading">Rudramati Marg, Kathmandu 44600</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">5</th>
@@ -100,6 +118,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">+977-4476152</a></td>
           <td class="sub-heading">Ring Road, Kathmandu 44600</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">6</th>
@@ -107,6 +129,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">01 4110842, 4110893</a></td>
           <td class="sub-heading">Kumaripati, Lalitpur</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">7</th>
@@ -114,6 +140,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">+977-4476152</a></td>
           <td class="sub-heading">Dakshina Murti Marga, Kathmandu 44600</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">8</th>
@@ -121,6 +151,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">+977-4476152</a></td>
           <td class="sub-heading">Ring Road, Kathmandu 44600</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">9</th>
@@ -128,6 +162,10 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">01 4110842, 4110893</a></td>
           <td class="sub-heading">Chabahil Sadak, Kathmandu 44602</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
         <tr>
           <th scope="row">10</th>
@@ -135,36 +173,12 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
             style="text-decoration: none; color: #000;">977-(0)1-4470588</a></td>
           <td class="sub-heading">Kanti Path, Kathmandu 44600</td>
+          <td>
+            <a class="btn btn-outline-primary btn-sm">Update</a>
+            <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+            </td>
         </tr>
-        <tr>
-          <th scope="row">11</th>
-          <td class="sub-heading">Medicare National Hospital & Research Center</td>
-          <td class="sub-heading"><a href="tel:+977-1-4469064"
-            style="text-decoration: none; color: #000;">+977-4476152</a></td>
-          <td class="sub-heading">Dakshina Murti Marga, Kathmandu 44600</td>
-        </tr>
-        <tr>
-          <th scope="row">12</th>
-          <td class="sub-heading">Nobel Hospital</td>
-          <td class="sub-heading"><a href="tel:+977-1-4469064"
-            style="text-decoration: none; color: #000;">01 4110842, 4110893</a></td>
-          <td class="sub-heading">chabahil Sadak, Kathmandu 44602</td>
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td class="sub-heading">Patan Hospital</td>
-          <td class="sub-heading"><a href="tel:+977-1-4469064"
-            style="text-decoration: none; color: #000;">01 4110842, 4110893</a></td>
-          <td class="sub-heading">Kumaripati, Lalitpur</td>
-        </tr>
-        <tr>
-          <th scope="row">13</th>
-          <td class="sub-heading">Swacon International Hospital Pvt. Ltd</td>
-          <td class="sub-heading"><a href="tel:+977-1-4469064"
-            style="text-decoration: none; color: #000;">977-(0)1-4470588</a></td>
-          <td class="sub-heading">Ring Road, Kathmandu 44600</td>
-        </tr>
-
+       
       </tbody>
     </table>
   </section>

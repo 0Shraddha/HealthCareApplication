@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" xmlns:th = "http://www.thymeLeaf.org">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>MediSync</title>
+</head>
+
+<body>
+
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div> <a href="#" class="nav_logo"><img src="./images/logowhite-01.png" alt=""></a>
+        <div class="nav_list">
+          <a href="admin-index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="16px"> <span
+              class="nav_name">Dashboard</span> </a>
+          <a href="./listPatientsAppointment.html" class="nav_link active"> <img src="./images/Layer_1.png" alt="" width="16px"> <span
+              class="nav_name">Patient</span> </a>
+          <a href="#" class="nav_link"> <img src="./images/Group 2.png" alt="" width="16px"> <span
+              class="nav_name">Doctors</span> </a>
+          <a href=".#" class="nav_link"> <img src="./images/Vector.png" alt="" width="12px"> <span
+              class="nav_name">Blood</span> </a>
+          <a href="#" class="nav_link"> <img src="./images/Layer_1 (1).png" alt="" width="16px"> <span
+              class="nav_name">Ambulance</span> </a>
+          <a href=".#" class="nav_link"> <img src="./images/Layer_1 (2).png" alt="" width="16px"> <span
+              class="nav_name">Blogs</span> </a>
+        </div>
+      </div> <a href="./website.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+          class="nav_name">Logout</span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="profile"> 
+    <div class="name">Shraddha</div>
+    <img src="./images/shraddha.jpg" alt="" width="45x" height="45px"
+      style="border-radius: 50%; border: 0.5px solid #d9d9d9;">
+  </div>
+  <section class="main lmargin">
+    <div class="opening">
+      <h3 class="heading">Patient Appointment List</h3>
+    </div>
+    <div class="row">
+      <div class = "col-lg-3">
+      <a href="addPatient.html" class = "btn btn-primary btn-sm mb-3">Add Patient</a>  
+  <!-- yo only in ADMIN ko page ma dekhauneee -->
+  
+      </div>
+      </div>
+
+    <div class="contents">    
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th scope="col">S.NO</th> -->
+            <th scope="col">Full Name</th>
+            <th scope="col">Email Address</th>
+            <th scope="col">Contact No.</th>
+            <th scope="col">Date</th>
+            <th scope="col">Disease</th>
+            <th scope="col">Action</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
+  <script src="index.js">
+  </script>
+
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  <script src="chart.js"></script>
+
+
+
+</body>
+
+
+</html>
