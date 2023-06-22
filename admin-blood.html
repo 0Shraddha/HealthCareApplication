@@ -30,7 +30,7 @@
               class="nav_name">Dashboard</span> </a>
           <a href="./listPatientsAppointment.html" class="nav_link"> <img src="./images/Layer_1.png" alt="" width="15px"> <span
               class="nav_name">Appointment</span> </a>
-          <a href="#" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
+          <a href="./doctor.html" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
               class="nav_name">Doctors</span> </a>
           <a href="#" class="nav_link active"> <img src="./images/Vector.png" alt="" width="10px"> <span
               class="nav_name">Blood</span> </a>
@@ -72,6 +72,14 @@
         <span id="o1" class="blood-filter">O+</span>
         <span id="o2" class="blood-filter">O-</button>
       </div> -->
+      <br>
+      <div class="row">
+        <div class = "col-lg-3">
+        <a href="./addBlood.html" class = "btn btn-primary btn-sm mb-3">Add Blood Details</a>  
+    <!-- yo only in ADMIN ko page ma dekhauneee -->
+    
+        </div>
+        </div>
     <table class="table table-striped" id="myTable">
       <thead>
         <tr>
@@ -90,6 +98,13 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
               style="text-decoration: none; color: #000;">+977-1-4469064 / 4476152</a></td>
           <td class="sub-heading">A+, A-, O+, O-, B+, B-, AB+AB-</td>
+          <!-- <td><a
+            th:href="@{/patients/showFormForUpdate(patientId=${tempEmployee.id})}"
+            class="btn btn-outline-primary btn-sm">Update</a> <a
+            th:href="@{/patients/delete(patientId=${tempEmployee.id})}"
+            class="btn btn-outline-danger btn-sm"
+            onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
+          </td> -->
           <td>
             <a class="btn btn-outline-primary btn-sm">Update</a>
             <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>
@@ -101,6 +116,7 @@
           <td class="sub-heading"><a href="tel:+977-1-4469064"
               style="text-decoration: none; color: #000;">+977-4476152</a></td>
           <td class="sub-heading">A+, A-, B+, B-</td>
+          
           <td>
             <a class="btn btn-outline-primary btn-sm">Update</a>
             <a class="btn btn-outline-danger btn-sm" onclick="if(!(confirm('Are you sure you want to delete this patient details?'))) return false">Delete</a>

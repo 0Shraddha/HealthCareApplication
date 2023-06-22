@@ -279,6 +279,10 @@ th{
   font-size: 14px;
   font-weight: 300;
 }
+.font td{
+	font-size: 14px;
+  font-weight: 300;
+}
 td{
   color: #000;
 }

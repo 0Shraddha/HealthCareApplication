@@ -23,17 +23,17 @@
         <nav class="nav">
           <div> <a href="#" class="nav_logo"><img src="./images/logowhite-01.png" alt=""></a>
             <div class="nav_list">
-              <a href="./admin-index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
+              <a href="./index.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
                   class="nav_name">Dashboard</span> </a>
               <a href="./listPatientsAppointment.html" class="nav_link"> <img src="./images/Layer_1.png" alt="" width="15px"> <span
                   class="nav_name">Patient</span> </a>
-              <a href="./doctor.html" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
+              <a href="#" class="nav_link"> <img src="./images/Group 2.png" alt="" width="15px"> <span
                   class="nav_name">Doctors</span> </a>
-              <a href="./admin-blood.html" class="nav_link"> <img src="./images/Vector.png" alt="" width="10px"> <span
+              <a href="./blood.html" class="nav_link active"> <img src="./images/Vector.png" alt="" width="10px"> <span
                   class="nav_name">Blood</span> </a>
-              <a href="./admin-ambulance.html" class="nav_link"> <img src="./images/Layer_1 (1).png" alt="" width="20px"> <span
+              <a href="#" class="nav_link"> <img src="./images/Layer_1 (1).png" alt="" width="20px"> <span
                   class="nav_name">Ambulance</span> </a>
-              <a href="./admin-blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
+              <a href="./blog.html" class="nav_link"> <img src="./images/Group 36.png" alt="" width="15px"> <span
                   class="nav_name">Blogs</span> </a>
             </div>
           </div> <a href="./website.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
@@ -52,37 +52,28 @@
   <form th:action="@{/patients}" th:object="${patient}" method="POST">
   			<!-- we have used the "${patient}" vanne object name in PatientController-->
     <div class="opening" id="form-title">
-      <h4>Add <span style="color: var(--secondary-color);">Patient</span> Details</h4>
+      <h4>Add <span style="color: var(--secondary-color);">Blood</span> Details</h4>
     </div>
     <br>
-    <div class="mb-2">
-      <label for="exampleName" class="form-label">Full Name</label>
-      <input type="name" class="form-control sub-heading" id="exampleInputName" width="100"
-        th:field="*{fullName}" placeholder="Enter your Full Name" required>
-    </div>
-    <div class="mb-2">
-        <label for="exampleInputEmail1" class="form-label">Email Address</label>
-        <input type="email" class="form-control sub-heading" id="exampleInputEmail1" width="100"
-          th:field="*{email}" placeholder="Enter your Email Address" aria-describedby="emailHelp" required>
-      </div>
-      <div class="mb-2">
-        <label for="exampleInputNumber" class="form-label">Phone No.</label>
-        <input type="tel" class="form-control sub-heading" id="exampleInputNumber" width="100"
-          th:field="*{phone}" placeholder="Enter your Phone Number" aria-describedby="phoneHelp" required>
-      </div>
-      <div class="mb-2">
-        <label for="exampleInputNumber" class="form-label">Available Appoitment Dates</label>
-      <!-- <input type="text" class="form-control sub-heading" id="from-datepicker" width="100"
-      placeholder="Book your appointment" required/>   -->
-      <input type="text" class="form-control sub-heading" id="exampleInputName" width="100"
-        th:field="*{date}" placeholder="Book your appointment" required>
-    </div>
-      <div class="mb-2">
-        <label for="exampleInputDesc" class="form-label">Describe your disease</label>
-        <textarea class="form-control sub-heading" id="textAreaExample" rows="4" th:field="*{disease}s" placeholder="Tell something about your disease" required></textarea>
-        </div>
     
-    <button type="submit" ><a style="color: #fff; text-decoration: none;">Make Appoinment</a></button>
+    <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">Hospital Name</label>
+        <input type="text" class="form-control sub-heading" id="exampleInputEmail1" width="100"
+          th:field="*{hospitalName}" placeholder="Enter Hospital Name" aria-describedby="emailHelp" required>
+      </div>
+      <div class="mb-2">
+        <label for="exampleName" class="form-label">Contact No.</label>
+        <input type="number" class="form-control sub-heading" id="exampleInputName" width="100"
+          th:field="*{contact}" placeholder="Enter contact details" required>
+      </div>
+      <div class="mb-2">
+        <label for="exampleName" class="form-label">Location</label>
+        <input type="text" class="form-control sub-heading" id="exampleInputName" width="100"
+          th:field="*{location}" placeholder="Enter location" required>
+      </div>
+     
+    
+    <button type="submit" ><a href ="./admin-ambulance.html" style="color: #fff; text-decoration: none;">Save</a></button>
     
 
     </div>
@@ -107,13 +98,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script> 
-    <script> 
-        $( document ).ready(function() {     
-        $("#from-datepicker").datepicker({          
-        format: 'yyyy-mm-dd' //can also use format: 'dd-mm-yyyy'     
-        });      
-        });  
-        </script>
   <script src="index.js"></script>
 </body>
 
